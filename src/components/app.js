@@ -5,22 +5,22 @@ export default class App extends Component {
     return (
       <div>
         <div classname = "grid">
-          <div>
+          <div className="grid__skew-dark-one-box">
             h1
           </div>
-          <div>
+          <div className="grid__skew-dark-two">
+            h1
+          </div >
+          <div className="grid__skew-dark-three">
             h1
           </div>
-          <div>
-            h1
-          </div>
-          <div className = "grid_skew-light-one">
+          <div className = "grid__skew-light-one">
             
           </div>
-          <div className = "grid_skew-light-two">
+          <div className = "grid__skew-light-two">
           
           </div>
-          <div className = "grid_skew-light-three-box">
+          <div className = "grid__skew-light-three-box">
           
           </div>
         </div>

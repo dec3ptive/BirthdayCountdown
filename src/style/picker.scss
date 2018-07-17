@@ -1,13 +1,15 @@
 .picker {
     grid-column: 5/10;
-    grid-row: 2/4;
-    font-size: 80 px;
-    font-family: "Roboto Condensed";
-    font-weight: bold;
+    grid-row: 2/3;
+    justify-self: center;
     padding-bottom: 50px;
-    color: $color-gray-one;
+
     
     input  {
+        font-size: 80 px;
+        font-family: "Roboto Condensed";
+        font-weight: bold;
+        color: $color-gray-one;
         border: none;
         background-color: transparent;
         border-bottom: 2px solid #eb39b4;

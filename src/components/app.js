@@ -3,6 +3,8 @@ import Picker from './picker';
 import Button from './button';
 import Clock from './clock';
 import ChangeDate from './changeDate';
+import largeText from './largeText';
+
 
 export default class App extends Component {
   
@@ -18,10 +20,13 @@ export default class App extends Component {
     if(this.state.active) {
       return [
         <clock/>,
-        ChangeDate('Change Date', () => this.setState({active: false}))
+        ChangeDate('Change Date', () => this.setState({active: false})),
+        largeText('04/03')
+        <label className="grid__remaining">Remaining until your 21st birthday</label>
       ]
     } else {
-      return Button('Generate Countdown', () => this.setState({ active: true}))
+      <Picker/>,
+      Button('Generate Countdown', () => this.setState({ active: true}))
     }
   }  .bind(this)
   
@@ -52,7 +57,7 @@ export default class App extends Component {
           
         </div>
 
-        <Picker/>
+
           { this.renderItems() }
       </div>
     );

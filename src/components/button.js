@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Button = (title) => {
+const Button = (title, callback) => {
     return (
-        <button className="button" onClick={() => console.log("tryingto handle generate countdown")}>
+        <button className="button" onClick={callback}>
             {title}
         </button>
     )

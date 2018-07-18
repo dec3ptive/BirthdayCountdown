@@ -5,6 +5,9 @@ import Clock from './clock';
 
 export default class App extends Component {
   render() {
+
+    return <clock/>
+
     return (
       <div classname = "grid">
         <h1 className="grid__title">Birthday Countdown</h1>

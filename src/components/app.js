@@ -4,6 +4,24 @@ import Button from './button';
 import Clock from './clock';
 
 export default class App extends Component {
+  
+  constructor(props) {
+    this.state = {
+      active: false
+    }
+  }
+  
+  renderItems = function() {
+    if(this.state.active) {
+      return [
+        <clock/>,
+        Button('Generate Countdown', () => this.setState({ active: true}))
+      ]
+    } else {
+      return Button('Generate Countdown', () => this.setState({ active: true}))
+    }
+  }  .bind(this)
+  
   render() {
 
     return <clock/>
@@ -32,7 +50,7 @@ export default class App extends Component {
         </div>
 
         <Picker/>
-        { Button('Generate Countdown')}
+          { this.renderItems() }
       </div>
     );
   }

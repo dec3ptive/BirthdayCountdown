@@ -4,20 +4,20 @@ class Clock extends Component {
     render() {
         return (
             <div className = "clock">
-                <div className = "clock__days">
+                <div className = "clock__days clock__box">
                     <label className="clock__title">DAYS</label>
                     <label className="clock__title">20</label>
                 </div>
-                <div className = "clock__hours">
-                    <label className="clock__title">HOURS</label>
+                <div className = "clock__hours clock__box">
+                    <label className="clock__title">HRS</label>
                     <label className="clock__title">20</label>
                 </div>
-                <div className = "clock__minutes">
-                    <label className="clock__title">MINUTES</label>
+                <div className = "clock__minutes clock__box">
+                    <label className="clock__title">MINS</label>
                     <label className="clock__title">20</label>
                 </div>
-                <div className = "clock__seconds">
-                    <label className="clock__title">SECONDS</label>
+                <div className = "clock__seconds clock__box">
+                    <label className="clock__title">SECS</label>
                     <label className="clock__title">20</label>
                 </div>
             </div>

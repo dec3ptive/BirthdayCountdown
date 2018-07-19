@@ -21,7 +21,7 @@ export default class App extends Component {
       return [
         <clock/>,
         ChangeDate('Change Date', () => this.setState({active: false})),
-        largeText('04/03')
+        largeText('04/03'),
         <label className="grid__remaining">Remaining until your 21st birthday</label>
       ]
     } else {

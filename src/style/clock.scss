@@ -1,6 +1,6 @@
 .clock {
     grid-row: 3/4;
-    grid-column: 2/11;
+    grid-column: 2/10;
     align-self: end;
 
     background: $color-gray-one;
@@ -14,7 +14,7 @@
     display: grid;
     grid-template-columns: reapeat(auto-fit, minmax(150px, 275px));
     align-items: center;
-    grid-column-gap: 80px;
+    grid-column-gap: 10px;
     justify-items: center;
     justify-content: center;
     align-content: center;

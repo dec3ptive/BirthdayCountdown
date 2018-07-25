@@ -75,9 +75,7 @@ export default class App extends Component {
       
       
       
-    var now = today().getTime();
-
-
+    var now = moment().toDate().getTime();
     var distance = countDownData - now;
 
 
